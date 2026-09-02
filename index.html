@@ -252,6 +252,7 @@ body::after{
   background:var(--white);padding:clamp(28px,3.2vw,42px);position:relative;overflow:hidden;
   transition:background .45s,color .45s;min-height:262px;display:flex;flex-direction:column;
 }
+.tcard__icon{width:30px;height:30px;margin-bottom:22px;stroke:currentColor;fill:none;stroke-width:1.2;color:var(--charcoal);transition:color .45s}
 .tcard__num{
   font-family:var(--serif);font-size:.8rem;color:var(--grey-40);margin-bottom:20px;letter-spacing:.1em;
   transition:color .45s;
@@ -335,6 +336,8 @@ body::after{
 }
 .mentor__side{background:var(--ink);color:var(--white);padding:clamp(32px,4vw,52px);display:flex;flex-direction:column;justify-content:space-between;gap:34px}
 .mentor__side .eyebrow{color:rgba(255,255,255,.5)}
+.mentor__who{display:flex;align-items:center;gap:16px}
+.mentor__photo{width:64px;height:64px;flex:none;border-radius:50%;object-fit:cover;filter:grayscale(1) contrast(1.05);border:1px solid rgba(255,255,255,.25)}
 .mentor__who b{display:block;font-family:var(--serif);font-size:1.42rem;font-weight:400;margin-bottom:6px}
 .mentor__who span{font-size:.72rem;color:rgba(255,255,255,.55);line-height:1.65;display:block}
 .mentor__mark{font-family:var(--serif);font-size:5.5rem;line-height:.6;color:rgba(255,255,255,.16)}
@@ -461,7 +464,7 @@ body::after{
 .footer h4{font-family:var(--sans);font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--white);margin-bottom:18px;font-weight:500}
 .footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .footer a:hover{color:var(--white)}
-.footer__brand img{height:96px;margin-bottom:20px}
+.footer__brand img{height:96px;width:auto;margin-bottom:20px}
 .footer__brand p{max-width:34ch;font-size:.85rem;line-height:1.7}
 .social{display:flex;gap:10px;margin-top:18px}
 .social a{
@@ -779,6 +782,9 @@ body::after{
 
     <div class="tgrid rv">
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2c.9 4.8 1.7 7.7 5.5 9-3.8 1.3-4.6 4.2-5.5 9-.9-4.8-1.7-7.7-5.5-9 3.8-1.3 4.6-4.2 5.5-9z"/>
+        </svg>
         <span class="tcard__num">01</span>
         <h3>Clareamento dental</h3>
         <p>O pedido mais frequente do consultório — e um dos resultados mais rápidos de perceber. Clareamento de consultório, caseiro ou combinado, com controle de sensibilidade.</p>
@@ -786,6 +792,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 9c2.7 3 5 4.3 8 4.3S17.3 12 20 9"/>
+          <path d="M5 14.3c2.5 2.3 4.6 3.3 7 3.3s4.5-1 7-3.3"/>
+        </svg>
         <span class="tcard__num">02</span>
         <h3>Alinhadores invisíveis</h3>
         <p>Ortodontia estética e removível, planejada digitalmente em parceria com o Dr. Flávio Venícius. Discretos, confortáveis e com previsibilidade de cada movimento.</p>
@@ -793,6 +803,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.5"/>
+          <path d="M12 8v8M8 12h8"/>
+        </svg>
         <span class="tcard__num">03</span>
         <h3>Cirurgia oral menor</h3>
         <p>Extrações, sisos inclusos e pequenos procedimentos com capacitação específica pelo grupo MFT. Minha paixão dentro da odontologia — feita com técnica e calma.</p>
@@ -800,6 +814,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="4.6" r="1.4"/>
+          <path d="M12 6.4V15M12 15l-3 5M12 15l3 5"/>
+        </svg>
         <span class="tcard__num">04</span>
         <h3>Endodontia</h3>
         <p>Tratamento de canal com foco em conforto e preservação do dente. A área que aprendi a admirar ainda antes da faculdade, acompanhando meu primo Vinícius.</p>
@@ -807,6 +825,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4.5 15c2.6 3 5.2 4.5 7.5 4.5s4.9-1.5 7.5-4.5"/>
+          <path d="M8 12V7.5M12 12V6.5M16 12V7.5"/>
+        </svg>
         <span class="tcard__num">05</span>
         <h3>Periodontia</h3>
         <p>Limpeza profissional, raspagem e tratamento de gengiva. A base de toda a odontologia: sem gengiva saudável, nenhum resultado estético se sustenta.</p>
@@ -814,6 +836,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.5"/>
+          <circle cx="12" cy="12" r="2.6"/>
+        </svg>
         <span class="tcard__num">06</span>
         <h3>Restaurações estéticas</h3>
         <p>Resinas que devolvem forma, função e naturalidade ao dente, com escolha de cor feita junto com você e acabamento imperceptível.</p>
@@ -821,6 +847,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5"/>
+          <path d="M15.3 15.3L20 20"/>
+        </svg>
         <span class="tcard__num">07</span>
         <h3>Clínica geral e prevenção</h3>
         <p>Avaliação completa, profilaxia, aplicação de flúor e orientação de higiene. O acompanhamento que evita o tratamento caro lá na frente.</p>
@@ -828,6 +858,9 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linejoin="round" aria-hidden="true">
+          <path stroke-linecap="round" d="M13 3L5 13.5h5.5L10 21l8-10.5h-5.5z"/>
+        </svg>
         <span class="tcard__num">08</span>
         <h3>Urgência odontológica</h3>
         <p>Dor, fratura ou trauma não esperam horário comercial. Sempre que possível, encaixo o atendimento para resolver a dor primeiro e planejar depois.</p>
@@ -835,6 +868,10 @@ body::after{
       </article>
 
       <article class="tcard">
+        <svg class="tcard__icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 18l4.5-9L13 15l3-5.5L20 12"/>
+          <circle cx="4" cy="18" r="1.1"/><circle cx="8.5" cy="9" r="1.1"/><circle cx="13" cy="15" r="1.1"/><circle cx="16" cy="9.5" r="1.1"/><circle cx="20" cy="12" r="1.1"/>
+        </svg>
         <span class="tcard__num">09</span>
         <h3>Planejamento do sorriso</h3>
         <p>Quando o caso pede mais de uma especialidade, montamos um plano em etapas: primeiro saúde, depois função, por último estética — no seu tempo e no seu orçamento.</p>
@@ -950,11 +987,14 @@ body::after{
           <span class="mentor__mark" aria-hidden="true">”</span>
         </div>
         <div class="mentor__who">
-          <b>Dr. Flávio Venícius</b>
-          <span>
-            Ortodontista · Mentoria Longitude<br>
-            @flavioveniciusortodontia
-          </span>
+          <img class="mentor__photo" src="assets/img/flavio-venicius.jpg" alt="Dr. Flávio Venícius" width="700" height="700" loading="lazy">
+          <div>
+            <b>Dr. Flávio Venícius</b>
+            <span>
+              Ortodontista · Mentoria Longitude<br>
+              @flavioveniciusortodontia
+            </span>
+          </div>
         </div>
       </div>
 
